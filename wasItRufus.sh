@@ -41,3 +41,9 @@ fi
 
 lastAuthor=$(git log -1 --format=%an)
 echo "$lastAuthor"
+if [ "$lastAuthor" == "Rufus" ]
+then
+	echo "blame Rufus: True"
+else 
+	echo "blame Rufus: False"
+fi
