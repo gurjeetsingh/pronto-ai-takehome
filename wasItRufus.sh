@@ -29,6 +29,9 @@ timeOfCommit=$(git log -1 --date=unix --format=%ad)
 currentTime=$(date +%s)
 #how to get difference
 timeSince=$((currentTime - timeOfCommit))
-echo "$timeOfCommit"
-echo "$currentTime"
-echo "$timeSince"
+if [ $timeSince -lt 604800 ]
+then
+	echo "recent commit: True"
+else
+	echo "recent commit: False"
+fi
