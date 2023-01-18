@@ -1,5 +1,6 @@
 # pronto-ai-takehome
-Was it Rufus? script for Pronot.ai take home
+ ```Was it Rufus?``` 
+Script for Pronot.ai take home
 
 Name: Gurjeet Singh Gill
 
@@ -10,7 +11,7 @@ LinkedIn: https://www.linkedin.com/in/gurjeetsinghgill/
 
 The discription of task not included due to the nature of this being an assignment.
 
-Copy executable in in home or usr directory, or a folder that contains the directories to be tested.
+Copy executable into home or usr directory, or a folder that contains the directories to be tested.
 
 Please run ```chmod +x wasItRufus.sh``` to make the script an executable.
 
