@@ -23,11 +23,14 @@ fi
 
 #Whether the current head commit was authored in the last week
 #reference: https://manpages.ubuntu.com/manpages/xenial/man1/date.1.html
-#seconds in 1 week = 
+#seconds in 1 week = 604800
 
 timeOfCommit=$(git log -1 --format=%cd)
 currentTime=$(date +%s)
-timeSince=$(currentTime - (date -d timeOfCommit +%s)) #how to get difference
+#TOCsecondsEpoch=$(date -d "$timeOfCommit" +%s)
+#how to get difference
+#timeSince=$((currentTime - TOCsecondsEpoch))
 echo "$timeOfCommit"
 echo "$currentTime"
-echo "$timeSince"
+#echo "$TOCsecondsEpoch"
+#echo "$timeSince"
