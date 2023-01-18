@@ -45,7 +45,6 @@ fi
 
 #Whether the current head commit was authored by Rufus
 lastAuthor=$(git log -1 --format=%an)
-echo "$lastAuthor"
 if [ "$lastAuthor" == "Rufus" ]
 then
 	echo "blame Rufus: True"
