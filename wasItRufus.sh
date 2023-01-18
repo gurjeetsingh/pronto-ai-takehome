@@ -51,3 +51,4 @@ then
 else 
 	echo "blame Rufus: False"
 fi
+#changed to by Rufus
