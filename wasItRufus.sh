@@ -7,6 +7,11 @@
 #LinkedIn: https://www.linkedin.com/in/gurjeetsinghgill/
 #references used: https://www.taniarascia.com/how-to-create-and-use-bash-scripts/
 
+git_dir=$1
+
+#switch to the git directory provided
+cd $git_dir
+
 
 #Get current branch status using rev-parse
 #references used: https://git-scm.com/docs/git-rev-parse
@@ -22,11 +27,11 @@ else
 	echo "local changes: False"
 fi
 
+
 #Whether the current head commit was authored in the last week
 #reference used: https://manpages.ubuntu.com/manpages/xenial/man1/date.1.html
 #reference used: https://git-scm.com/docs/git-log
 #seconds in 1 week = 604800
-
 timeOfCommit=$(git log -1 --date=unix --format=%ad)
 currentTime=$(date +%s)
 #how to get difference
