@@ -25,9 +25,10 @@ fi
 #reference: https://manpages.ubuntu.com/manpages/xenial/man1/date.1.html
 #seconds in 1 week = 604800
 
-timeOfCommit=$(git log -1 --format=%cd)
+#timeOfCommit=$(git log -1 --format=%cd)
+timeOfCommit=$(git log -1 --date=unix --format=%ad)
 currentTime=$(date +%s)
-#TOCsecondsEpoch=$(date -d "$timeOfCommit" +%s)
+TOCsecondsEpoch=$(date -d "$timeOfCommit" +%s)
 #how to get difference
 #timeSince=$((currentTime - TOCsecondsEpoch))
 echo "$timeOfCommit"
