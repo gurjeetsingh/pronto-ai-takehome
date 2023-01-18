@@ -2,7 +2,6 @@
 
 #Was it Rufus? script for Pronot.ai take home
 #Name: Gurjeet Singh Gill
-#Education: Computer Science Graduate
 #Email: gurjeetsg1@gmail.com
 #LinkedIn: https://www.linkedin.com/in/gurjeetsinghgill/
 #references used: https://www.taniarascia.com/how-to-create-and-use-bash-scripts/
