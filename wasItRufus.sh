@@ -8,4 +8,4 @@ echo "Hello, $who!"
 
 #Get current branch status using rev-parse
 current_branch=$(git rev-parse --abbrev-ref HEAD) 
-echo "$current_branch"
+echo "active branch: $current_branch"
